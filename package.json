@@ -8,7 +8,7 @@
     "dist": "cooking build -p -c /config/cooking.dev.js",
     "build": "cooking build -p -c /config/cooking.build.js",
     "npm": "npm run build && git add . && git commit -m build&& npm version patch && npm publish && git push && git push origin --tags",
-    "webpack": "webpack"
+    "webpack": "webpack --mode development --watch"
   },
   "author": "",
   "repository": {
@@ -29,7 +29,7 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-runtime": "^6.26.0",
-    "element-ui": "^2.0.7",
+    "element-ui": "^2.4.5",
     "json-stable-stringify": "^1.0.1",
     "vue": "^2.5.9"
   },
@@ -42,6 +42,7 @@
     "cooking-cli": "^1.5.5",
     "cooking-less": "^1.0.5",
     "cooking-vue2": "^0.3.3",
+    "file-loader": "^1.1.11",
     "hoek": "^5.0.3",
     "less-loader": "^4.1.0",
     "vue-loader": "^14.2.2",
